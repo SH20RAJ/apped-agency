@@ -20,7 +20,7 @@ export default function SignIn() {
         <div className="flex flex-col items-center justify-center text-center">
           <div className="flex items-center space-x-2">
             <Play className="h-6 w-6 text-primary" />
-            <span className="text-2xl font-bold">AppLaunch Pro</span>
+            <span className="text-2xl font-bold">Apped.me</span>
           </div>
           <h2 className="mt-6 text-2xl font-bold tracking-tight">
             Sign in to your account

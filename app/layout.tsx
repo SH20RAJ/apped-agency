@@ -9,7 +9,7 @@ import { Toaster } from '@/components/ui/sonner';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'AppLaunch Pro - Google Play Store App Launch Agency',
+  title: 'Apped - Google Play Store App Launch Agency',
   description: 'Professional app testing and launch services for the Google Play Store',
 };
 
@@ -24,7 +24,7 @@ export default function RootLayout({
       <body>
         <ThemeProvider
           attribute="class"
-          defaultTheme="system"
+          defaultTheme="dark"
           enableSystem
           disableTransitionOnChange
         >

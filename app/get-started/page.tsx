@@ -5,41 +5,41 @@ import Link from "next/link";
 
 const plans = [
   {
-    name: "Basic",
-    price: "$19.9",
-    description: "Perfect for indie developers",
+    name: "Basic Plan",
+    price: "$19",
+    description: "Ideal for indie developers",
     features: [
-      "Manual testing on 5 devices",
-      "Basic compliance review",
+      "20 users testing for 14 days",
+      "Detailed feedback and compliance report",
       "Email support",
       "Launch checklist",
       "1 round of revisions",
     ],
   },
   {
-    name: "Pro",
-    price: "$39",
-    description: "Best for growing teams",
+    name: "Pro Plan",
+    price: "$49",
+    description: "Best for small teams and startups",
     features: [
-      "Testing on 15+ devices",
-      "Deep compliance review",
-      "Priority support",
-      "Store listing optimization",
+      "All Basic Plan features",
+      "Demographic targeting",
+      "Advanced user feedback with video recording",
+      "25 users testing for 14 days",
       "3 rounds of revisions",
-      "Performance optimization",
+      "Priority email support",
     ],
   },
   {
-    name: "Enterprise",
+    name: "Enterprise Plan",
     price: "Custom",
-    description: "For large-scale applications",
+    description: "Designed for enterprises with specific needs",
     features: [
-      "Unlimited device testing",
-      "Complete compliance audit",
-      "24/7 dedicated support",
+      "All Pro Plan features",
+      "Custom testing scenarios",
+      "Priority support with quicker turnaround times",
+      "Unlimited users and testing duration",
+      "Dedicated account manager",
       "Custom launch strategy",
-      "Unlimited revisions",
-      "Security assessment",
       "Post-launch monitoring",
     ],
   },
@@ -70,7 +70,7 @@ export default function GetStarted() {
                 <div className="mt-4">
                   <span className="text-4xl font-bold">{plan.price}</span>
                   {plan.price !== "Custom" && (
-                    <span className="text-muted-foreground">/project</span>
+                    <span className="text-muted-foreground">/app</span>
                   )}
                 </div>
                 <p className="mt-4 text-muted-foreground">{plan.description}</p>

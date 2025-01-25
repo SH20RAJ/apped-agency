@@ -57,7 +57,7 @@ export default function Contact() {
               <div className="mt-6 space-y-4">
                 <div className="flex items-center gap-3">
                   <Mail className="h-5 w-5 text-primary" />
-                  <span>applaunchpro@gmail.com</span>
+                  <span>mail@apped.me</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <Phone className="h-5 w-5 text-primary" />

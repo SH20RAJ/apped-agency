@@ -150,7 +150,7 @@ export function Footer() {
 
         {/* Copyright */}
         <p className="mt-10 text-center text-xs leading-5 text-muted-foreground">
-          &copy; {new Date().getFullYear()} AppLaunch Pro. All rights reserved.
+          &copy; {new Date().getFullYear()} Apped. All rights reserved.
         </p>
       </div>
     </footer>

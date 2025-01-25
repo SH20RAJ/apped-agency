@@ -40,7 +40,7 @@ const features = [
 
 const testimonials = [
   {
-    content: "The team at AppLaunch Pro made our app launch process seamless and stress-free.",
+    content: "The team at Apped made our app launch process seamless and stress-free.",
     author: {
       name: "Sarah Chen",
       role: "CTO at TechStart",
@@ -118,7 +118,7 @@ export default function Home() {
   return (
     <ParallaxProvider>
       <div className="flex flex-col dark:bg-gray-950/90 relative z-20">
-        <ThreeBackground />
+        {/* <ThreeBackground /> */}
 
         {/* Hero Section */}
         <section className="relative isolate z-20">
@@ -375,7 +375,7 @@ export default function Home() {
                 ease: "linear"
               }}
             />
-            <div className="absolute inset-0 bg-gradient-to-b from-white via-secondary/5 to-secondary/10" />
+            <div className="absolute inset-0 bg-gradient-to-b from-grey/5 via-secondary/5 to-secondary/10" />
           </motion.div>
           
           <div className="mx-auto max-w-7xl px-6 lg:px-8">

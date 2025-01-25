@@ -6,7 +6,7 @@ import Link from "next/link";
 
 export function Logo() {
   return (
-    <Link href="/" className="flex items-center space-x-2 group">
+    <Link href="/" className="flex items-center space-x-2 group ml-2">
       <motion.div
         whileHover={{ rotate: 360 }}
         transition={{ duration: 0.5 }}
@@ -17,9 +17,9 @@ export function Logo() {
       </motion.div>
       <div className="flex flex-col">
         <span className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-primary via-primary/80 to-primary">
-          AppLaunch
+          Apped
         </span>
-        <span className="text-sm font-medium text-muted-foreground">Pro</span>
+        <span className="text-sm font-medium text-muted-foreground">.me</span>
       </div>
     </Link>
   );

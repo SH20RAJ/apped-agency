@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 "use client";
 
 import { motion } from "framer-motion";
@@ -68,7 +69,7 @@ export default function About() {
             transition={{ duration: 0.5 }}
           >
             <h1 className="text-4xl font-bold tracking-tight sm:text-6xl mb-6">
-              About <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-primary/80">AppLaunch Pro</span>
+              About <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary to-primary/80">Apped.me</span>
             </h1>
             <p className="text-lg text-muted-foreground mb-8">
               We're a team of passionate experts dedicated to helping developers successfully launch 

@@ -2,12 +2,12 @@
 
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
-import { CheckCircle, Play, Rocket, Shield, Star, Zap, Upload, Search, Settings, Check, Moon, Sun, RocketLaunch } from "lucide-react";
+import { CheckCircle, Play, Rocket, Shield, Star, Zap, Upload, Search, Settings, Check, Moon, Sun } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import { ParallaxProvider, Parallax } from 'react-scroll-parallax';
-import ThreeBackground from '@/Components/ThreeBackground';
+import ThreeBackground from '@/components/ThreeBackground';
 import { useTheme } from "next-themes";
 import { FaGoogle, FaGooglePlay } from "react-icons/fa";
 

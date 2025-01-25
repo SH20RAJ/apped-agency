@@ -37,6 +37,17 @@ const services = [
       "Post-launch monitoring",
     ],
   },
+  {
+    name: "Join Our Testing Team",
+    description: "Become a part of our professional testing community",
+    features: [
+      "Earn money testing apps",
+      "Flexible working hours",
+      "Early access to new apps",
+      "Professional testing experience",
+      "Regular payment cycles",
+    ],
+  },
 ];
 
 export default function Services() {

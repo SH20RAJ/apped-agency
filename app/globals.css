@@ -168,8 +168,6 @@
   transform: translateZ(20px);
 }
 
-
-
 .glow-effect {
   background: 
     radial-gradient(
@@ -207,4 +205,152 @@
       rgba(255, 255, 255, 0.1),
       transparent 30%
     );
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Cal+Sans:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Lora:wght@400;500;600&display=swap');
+
+.font-cal {
+  font-family: 'Cal Sans', sans-serif;
+}
+
+.font-playfair {
+  font-family: 'Playfair Display', serif;
+}
+
+.font-lora {
+  font-family: 'Lora', serif;
+}
+
+.metallic-text {
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Update the gradient animation */
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.animate-gradient {
+  background-size: 200% auto;
+  animation: gradient 8s linear infinite;
+}
+
+@import url('https://api.fontshare.com/v2/css?f[]=supreme@400,500,600,700&display=swap');
+
+.font-supreme {
+  font-family: 'Supreme', sans-serif;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% center;
+  }
+  100% {
+    background-position: 200% center;
+  }
+}
+
+.animate-shimmer {
+  background-size: 200% auto;
+  animation: shimmer 8s linear infinite;
+}
+
+@keyframes slide-up {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.animate-slide-up {
+  animation: slide-up 0.5s ease-out forwards;
+}
+
+@keyframes text-reveal {
+  0% {
+    clip-path: inset(0 100% 0 0);
+  }
+  100% {
+    clip-path: inset(0 0 0 0);
+  }
+}
+
+.animate-text-reveal {
+  animation: text-reveal 1s cubic-bezier(0.77, 0, 0.175, 1) forwards;
+}
+
+.animate-fade-in {
+  animation: fade-in 0.5s ease-out forwards;
+}
+
+.animate-fade-in-delay {
+  animation: fade-in 0.5s ease-out 0.3s forwards;
+  opacity: 0;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@import url('https://api.fontshare.com/v2/css?f[]=cal@400,700&display=swap');
+
+/* Add these custom font classes */
+.font-space-grotesk {
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+.font-cal {
+  font-family: 'Cal', sans-serif;
+}
+
+.font-inter {
+  font-family: 'Inter', sans-serif;
+}
+
+.font-product-sans {
+  font-family: 'Product Sans', 'Arial', sans-serif;
+}
+
+@import url('https://api.fontshare.com/v2/css?f[]=clash-display@400,700&f[]=cabinet-grotesk@400,700&f[]=general-sans@400,600&f[]=satoshi@400,700&display=swap');
+
+/* Add these custom font classes */
+.font-clash-display {
+  font-family: 'Clash Display', sans-serif;
+}
+
+.font-cabinet-grotesk {
+  font-family: 'Cabinet Grotesk', sans-serif;
+}
+
+.font-general-sans {
+  font-family: 'General Sans', sans-serif;
+}
+
+.font-satoshi {
+  font-family: 'Satoshi', sans-serif;
 }

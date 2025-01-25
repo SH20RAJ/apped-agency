@@ -6,7 +6,7 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { toast } from "sonner";
 import Link from "next/link";
-import { Play } from "lucide-react";
+import { Rocket, Stars, CheckCircle2 } from "lucide-react";
 
 export default function SignUp() {
   const handleSubmit = (e: React.FormEvent) => {
@@ -18,10 +18,13 @@ export default function SignUp() {
     <div className="min-h-[calc(100vh-4rem)] flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
       <Card className="w-full max-w-md space-y-8 p-8">
         <div className="flex flex-col items-center justify-center text-center">
-          <div className="flex items-center space-x-2">
-            <Play className="h-6 w-6 text-primary" />
-            <span className="text-2xl font-bold">AppLaunch Pro</span>
-          </div>
+        <div className="flex items-center space-x-2">
+  <div className="relative">
+    <Rocket className="h-6 w-6 text-primary rotate-45" />
+    <CheckCircle2 className="h-3 w-3 text-green-500 absolute -top-1 -right-1" />
+  </div>
+  <span className="text-2xl font-bold">Apped.me</span>
+</div>
           <h2 className="mt-6 text-2xl font-bold tracking-tight">
             Create your account
           </h2>

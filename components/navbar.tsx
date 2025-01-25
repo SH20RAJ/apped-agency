@@ -31,6 +31,8 @@ const navigation = [
   { name: "Get Started", href: "/get-started" },
   { name: "About", href: "/about" },
   { name: "Contact", href: "/contact" },
+  { name: "Join as Tester", href: "/join-as-tester" },
+  { name: "Live Chat", href: "/chat" },
 ];
 
 export function Navbar() {

@@ -17,6 +17,7 @@ const navigation = {
     { name: "App Testing", href: "/services#testing" },
     { name: "Compliance Review", href: "/services#compliance" },
     { name: "Launch Support", href: "/services#launch" },
+    { name: "Join as Tester", href: "/join-as-tester" },
     { name: "Custom Solutions", href: "/services#custom" },
   ],
   company: [
@@ -68,6 +69,23 @@ export function Footer() {
               Professional app testing and launch services for the Google Play Store.
               Making your app launch journey smooth and successful.
             </p>
+            <div className="mt-6 flex items-center space-x-2 text-sm text-muted-foreground">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+                className="w-4 h-4"
+              >
+                <path d="M3 4a2 2 0 00-2 2v1.161l8.441 4.221a1.25 1.25 0 001.118 0L19 7.162V6a2 2 0 00-2-2H3z" />
+                <path d="M19 8.839l-7.77 3.885a2.75 2.75 0 01-2.46 0L1 8.839V14a2 2 0 002 2h14a2 2 0 002-2V8.839z" />
+              </svg>
+              <a 
+                href="mailto:mail@apped.me"
+                className="hover:text-primary transition-colors"
+              >
+                mail@apped.me
+              </a>
+            </div>
           </div>
 
           {/* Navigation Links */}
@@ -150,7 +168,7 @@ export function Footer() {
 
         {/* Copyright */}
         <p className="mt-10 text-center text-xs leading-5 text-muted-foreground">
-          &copy; {new Date().getFullYear()} AppLaunch Pro. All rights reserved.
+          &copy; {new Date().getFullYear()} Apped. All rights reserved.
         </p>
       </div>
     </footer>

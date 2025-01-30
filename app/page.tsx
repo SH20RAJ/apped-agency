@@ -123,36 +123,36 @@ export default function Home() {
         {/* Hero Section */}
         <section className="relative isolate z-20">
           {/* Animated Background */}
-          <motion.div 
+          <motion.div
             className="absolute inset-x-0 top-0 -z-10 h-[1000px] overflow-hidden"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 1 }}
           >
             {/* Animated Grid */}
-            <motion.div 
+            <motion.div
               className="absolute inset-0 bg-[linear-gradient(rgba(50,50,50,0.3)_2px,transparent_2px),linear-gradient(to_right,rgba(50,50,50,0.3)_2px,transparent_2px)] dark:bg-[linear-gradient(rgba(255,255,255,0.15)_2px,transparent_2px),linear-gradient(to_right,rgba(255,255,255,0.15)_2px,transparent_2px)] bg-[size:4rem_4rem] [mask-image:radial-gradient(ellipse_80%_80%_at_50%_50%,#000_70%,transparent_100%)] dark:opacity-100"
               initial={{ opacity: 1 }}
-              animate={{ 
+              animate={{
                 backgroundPosition: ["0px 0px", "-100px -100px"],
-                scale: [1, 1.05]
+                scale: [1, 1.05],
               }}
               transition={{
                 duration: 20,
                 repeat: Infinity,
                 repeatType: "reverse",
-                ease: "linear"
+                ease: "linear",
               }}
             >
               <motion.div
                 className="absolute inset-0"
                 initial={{ opacity: 0.5 }}
                 animate={{ opacity: [0.5, 0.7, 0.5] }}
-                transition={{ 
-                  duration: 8, 
+                transition={{
+                  duration: 8,
                   repeat: Infinity,
                   repeatType: "reverse",
-                  ease: "easeInOut" 
+                  ease: "easeInOut",
                 }}
                 style={{
                   backgroundImage: `radial-gradient(circle at center, rgba(50,50,50,0.3) 0%, transparent 60%)`,
@@ -170,7 +170,7 @@ export default function Home() {
               transition={{
                 duration: 8,
                 repeat: Infinity,
-                ease: "easeInOut"
+                ease: "easeInOut",
               }}
             />
             <motion.div
@@ -183,7 +183,7 @@ export default function Home() {
                 duration: 10,
                 repeat: Infinity,
                 ease: "easeInOut",
-                delay: 1
+                delay: 1,
               }}
             />
             <motion.div
@@ -195,7 +195,7 @@ export default function Home() {
               transition={{
                 duration: 12,
                 repeat: Infinity,
-                ease: "easeInOut"
+                ease: "easeInOut",
               }}
             />
             {/* Gradient overlay */}
@@ -207,77 +207,57 @@ export default function Home() {
               {/* Left side content with parallax */}
               <Parallax translateY={[-20, 20]} className="flex-1 relative z-20">
                 <motion.div className="text-center lg:text-left">
-                  <motion.h1 
+                    <motion.h1
                     className="text-4xl font-bold tracking-tight sm:text-6xl mb-6 dark:text-white"
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5, delay: 0.2 }}
-                  >
-                    Launch Your App{" "}
-                    <motion.span
-                      initial={{ y: 0 }}
-                      animate={{ 
-                        y: [-2, -8, -2],
-                      }}
-                      transition={{
-                        duration: 2,
-                        repeat: Infinity,
-                        ease: "easeInOut"
-                      }}
-                      className="inline-block relative"
                     >
-                      <Rocket className="w-16 h-16 ml-2 rotate-[270deg]" strokeWidth={1.5} />
-                      <motion.div
-                        initial={{ opacity: 0.5, scale: 0.5 }}
-                        animate={{ 
-                          opacity: [0.5, 0.8, 0],
-                          scale: [0.5, 1, 0.5],
-                          y: [0, 10, 0]
-                        }}
-                        transition={{
-                          duration: 2,
-                          repeat: Infinity,
-                          ease: "easeOut"
-                        }}
-                        className="absolute bottom-0 left-1/2 -translate-x-1/2 w-10 h-10 bg-gradient-to-t from-orange-500 to-yellow-300 rounded-full blur-sm"
-                      />
-                    </motion.span>
-                    <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary via-primary/80 to-primary">
-                      Hassle-Free
-                    </span>{" "}
-                    on the{" "}
-                    <span className="inline-flex items-center">
-                      <span className="text-[#4285F4]">G</span>
-                      <span className="text-[#EA4335]">o</span>
-                      <span className="text-[#FBBC05]">o</span>
-                      <span className="text-[#4285F4]">g</span>
-                      <span className="text-[#34A853]">l</span>
-                      <span className="text-[#EA4335]">e</span>
-                    </span>{" "}
-                    Pl<FaGooglePlay className="inline-block w-7 h-7 sm:w-10 sm:h-10 mx-0.6 dark:text-[#00FF00] text-[#01875f]" />y Store
-                  </motion.h1>
-                  <motion.p 
+                    <span className="text-blue-500">L</span>
+                    <span className="text-red-500">a</span>
+                    <span className="text-yellow-500">u</span>
+                    <span className="text-blue-500">n</span>
+                    <span className="text-green-500">c</span>
+                    <span className="text-red-500">h</span>
+                    {" "}
+                    Your App Seamlessly on the{" "}
+                    <span className="text-blue-500">G</span>
+                    <span className="text-red-500">o</span>
+                    <span className="text-yellow-500">o</span>
+                    <span className="text-blue-500">g</span>
+                    <span className="text-green-500">l</span>
+                    <span className="text-red-500">e</span>
+                    {" "}
+                    Play Store{" "}
+                    </motion.h1>
+                  <motion.p
                     className="text-lg leading-8 text-muted-foreground dark:text-gray-300 mb-8"
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5, delay: 0.4 }}
                   >
-                    We test, optimize, and help you publish your app with ease. Let our experts handle 
-                    the complexities while you focus on building great features.
+                    We test, optimize, and help you publish your app with ease.
+                    Let our experts handle the complexities while you focus on
+                    building great features.
                   </motion.p>
-                  <motion.div 
+                  <motion.div
                     className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start relative z-20"
                     initial={{ opacity: 0, y: 20 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.5, delay: 0.6 }}
                   >
                     <Button size="lg" className="group relative z-20" asChild>
-                      <Link href="/contact">
-                        Start Now
+                      <Link href="https://forms.gle/5ronpsp71X7Tjsfg8">
+                        Join Waitlist
                         <Rocket className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
                       </Link>
                     </Button>
-                    <Button variant="outline" size="lg" className="relative z-20" asChild>
+                    <Button
+                      variant="outline"
+                      size="lg"
+                      className="relative z-20"
+                      asChild
+                    >
                       <Link href="/services">Learn More</Link>
                     </Button>
                   </motion.div>
@@ -296,21 +276,31 @@ export default function Home() {
                           className="bg-white/90 dark:bg-gray-800/90 backdrop-blur-sm rounded-lg p-6 shadow-lg dark:text-white perspective-500 transform-preserve-3d transition-transform duration-500 hover:rotate-x-12 hover:rotate-y-12 hover:translate-z-10 relative group overflow-hidden"
                           initial={{ opacity: 0, y: 20 }}
                           animate={{ opacity: 1, y: 0 }}
-                          transition={{ duration: 0.5, delay: 0.2 * feature.id }}
+                          transition={{
+                            duration: 0.5,
+                            delay: 0.2 * feature.id,
+                          }}
                           whileHover={{ y: -5 }}
                           onMouseMove={(e) => {
-                            const rect = e.currentTarget.getBoundingClientRect();
+                            const rect =
+                              e.currentTarget.getBoundingClientRect();
                             const x = e.clientX - rect.left;
                             const y = e.clientY - rect.top;
-                            e.currentTarget.style.setProperty('--mouse-x', `${x}px`);
-                            e.currentTarget.style.setProperty('--mouse-y', `${y}px`);
+                            e.currentTarget.style.setProperty(
+                              "--mouse-x",
+                              `${x}px`
+                            );
+                            e.currentTarget.style.setProperty(
+                              "--mouse-y",
+                              `${y}px`
+                            );
                           }}
                         >
                           {/* Add the glow effect div */}
                           <div className="pointer-events-none absolute -inset-px opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                             <div className="absolute inset-0 glow-effect" />
                           </div>
-                          
+
                           <div className="relative z-10">
                             <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center mb-4 transform-preserve-3d hover:translate-z-20 transition-transform duration-500">
                               <feature.icon className="h-6 w-6 text-primary" />
@@ -331,7 +321,7 @@ export default function Home() {
             </div>
 
             {/* Stats Section */}
-            <motion.div 
+            <motion.div
               className="mt-24 grid grid-cols-2 gap-8 md:grid-cols-4"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -345,8 +335,12 @@ export default function Home() {
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.5, delay: 0.2 * index }}
                 >
-                  <div className="text-4xl font-bold text-primary mb-2">{stat.number}</div>
-                  <div className="text-sm text-muted-foreground">{stat.label}</div>
+                  <div className="text-4xl font-bold text-primary mb-2">
+                    {stat.number}
+                  </div>
+                  <div className="text-sm text-muted-foreground">
+                    {stat.label}
+                  </div>
                 </motion.div>
               ))}
             </motion.div>
@@ -356,33 +350,34 @@ export default function Home() {
         {/* Why Choose Us Section */}
         <section className="relative py-24 overflow-hidden">
           {/* Background Animation for Why Choose Us */}
-          <motion.div 
+          <motion.div
             className="absolute inset-0 -z-10"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 1 }}
           >
-            <motion.div 
+            <motion.div
               className="absolute inset-0 bg-[linear-gradient(45deg,rgba(50,50,50,0.05)_1px,transparent_1px),linear-gradient(135deg,rgba(50,50,50,0.05)_1px,transparent_1px)] bg-[size:3rem_3rem]"
-              animate={{ 
+              animate={{
                 backgroundPosition: ["0px 0px", "50px 50px"],
-                scale: [1, 1.05, 1]
+                scale: [1, 1.05, 1],
               }}
               transition={{
                 duration: 20,
                 repeat: Infinity,
                 repeatType: "reverse",
-                ease: "linear"
+                ease: "linear",
               }}
             />
             <div className="absolute inset-0 bg-gradient-to-b from-grey/5 via-secondary/5 to-secondary/10" />
           </motion.div>
-          
+
           <div className="mx-auto max-w-7xl px-6 lg:px-8">
             <Parallax translateY={[-15, 15]} className="text-center mb-16">
               <h2 className="text-3xl font-bold mb-4">Why Choose Us</h2>
               <p className="text-muted-foreground max-w-2xl mx-auto">
-                We bring expertise, dedication, and proven success to every app launch
+                We bring expertise, dedication, and proven success to every app
+                launch
               </p>
             </Parallax>
 
@@ -399,13 +394,17 @@ export default function Home() {
                     <div className="flex flex-col h-full relative">
                       {/* Shine effect overlay */}
                       <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:animate-shine" />
-                      
+
                       <div className="mb-6">
                         <div className="w-12 h-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors">
                           <item.icon className="h-6 w-6 text-primary" />
                         </div>
-                        <h3 className="text-xl font-semibold mb-2">{item.title}</h3>
-                        <p className="text-muted-foreground">{item.description}</p>
+                        <h3 className="text-xl font-semibold mb-2">
+                          {item.title}
+                        </h3>
+                        <p className="text-muted-foreground">
+                          {item.description}
+                        </p>
                       </div>
                       <div className="mt-auto">
                         <div className="inline-flex items-center justify-center px-4 py-2 rounded-full bg-secondary/20 text-sm font-medium">
@@ -423,25 +422,25 @@ export default function Home() {
         {/* How It Works Section */}
         <section className="relative py-24 overflow-hidden">
           {/* Background Animation for How It Works */}
-          <motion.div 
+          <motion.div
             className="absolute inset-0 -z-10"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 1 }}
           >
-            <motion.div 
+            <motion.div
               className="absolute inset-0"
-              animate={{ 
+              animate={{
                 background: [
                   "radial-gradient(circle at 0% 0%, rgba(50,50,50,0.05) 0%, transparent 50%)",
                   "radial-gradient(circle at 100% 100%, rgba(50,50,50,0.05) 0%, transparent 50%)",
-                  "radial-gradient(circle at 0% 0%, rgba(50,50,50,0.05) 0%, transparent 50%)"
-                ]
+                  "radial-gradient(circle at 0% 0%, rgba(50,50,50,0.05) 0%, transparent 50%)",
+                ],
               }}
               transition={{
                 duration: 15,
                 repeat: Infinity,
-                ease: "linear"
+                ease: "linear",
               }}
             />
             <div className="absolute inset-0 bg-secondary/10 [mask-image:radial-gradient(ellipse_100%_100%_at_50%_50%,#000_70%,transparent_100%)]" />
@@ -451,7 +450,8 @@ export default function Home() {
             <Parallax translateY={[-20, 20]} className="text-center mb-16">
               <h2 className="text-3xl font-bold mb-4">How It Works</h2>
               <p className="text-muted-foreground max-w-2xl mx-auto">
-                Our streamlined process makes app publication simple and efficient
+                Our streamlined process makes app publication simple and
+                efficient
               </p>
             </Parallax>
 
@@ -473,7 +473,9 @@ export default function Home() {
                         {step.id}
                       </div>
                       <h3 className="font-semibold mb-2">{step.title}</h3>
-                      <p className="text-sm text-muted-foreground">{step.description}</p>
+                      <p className="text-sm text-muted-foreground">
+                        {step.description}
+                      </p>
                     </div>
                   </Card>
                 </Parallax>
@@ -485,23 +487,23 @@ export default function Home() {
         {/* Testimonials Section */}
         <section className="relative py-24 overflow-hidden">
           {/* Background Animation for Testimonials */}
-          <motion.div 
+          <motion.div
             className="absolute inset-0 -z-10"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 1 }}
           >
-            <motion.div 
+            <motion.div
               className="absolute inset-0 bg-[linear-gradient(0deg,rgba(50,50,50,0.05)_1px,transparent_1px)] bg-[size:2rem_2rem]"
-              animate={{ 
+              animate={{
                 backgroundPosition: ["0px 0px", "0px -50px"],
-                opacity: [0.5, 0.8, 0.5]
+                opacity: [0.5, 0.8, 0.5],
               }}
               transition={{
                 duration: 10,
                 repeat: Infinity,
                 repeatType: "reverse",
-                ease: "linear"
+                ease: "linear",
               }}
             />
             <motion.div
@@ -510,13 +512,13 @@ export default function Home() {
                 background: [
                   "radial-gradient(circle at 50% 0%, rgba(50,50,50,0.05) 0%, transparent 70%)",
                   "radial-gradient(circle at 50% 100%, rgba(50,50,50,0.05) 0%, transparent 70%)",
-                  "radial-gradient(circle at 50% 0%, rgba(50,50,50,0.05) 0%, transparent 70%)"
-                ]
+                  "radial-gradient(circle at 50% 0%, rgba(50,50,50,0.05) 0%, transparent 70%)",
+                ],
               }}
               transition={{
                 duration: 12,
                 repeat: Infinity,
-                ease: "linear"
+                ease: "linear",
               }}
             />
           </motion.div>
@@ -525,7 +527,8 @@ export default function Home() {
             <Parallax translateY={[-15, 15]} className="text-center mb-16">
               <h2 className="text-3xl font-bold mb-4">What Our Clients Say</h2>
               <p className="text-muted-foreground max-w-2xl mx-auto">
-                Don't just take our word for it - hear from some of our satisfied clients
+                Don't just take our word for it - hear from some of our
+                satisfied clients
               </p>
             </Parallax>
 
@@ -551,8 +554,12 @@ export default function Home() {
                           className="rounded-full"
                         />
                         <div>
-                          <p className="font-semibold">{testimonial.author.name}</p>
-                          <p className="text-sm text-muted-foreground">{testimonial.author.role}</p>
+                          <p className="font-semibold">
+                            {testimonial.author.name}
+                          </p>
+                          <p className="text-sm text-muted-foreground">
+                            {testimonial.author.role}
+                          </p>
                         </div>
                       </div>
                     </div>

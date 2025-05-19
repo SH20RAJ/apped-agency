@@ -20,7 +20,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning className=' '>
-      <head />
+      <head >
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1828915420581549"
+     crossOrigin="anonymous"></script>
+        </head>
       <body>
         <ThemeProvider
           attribute="class"
